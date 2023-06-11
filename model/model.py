@@ -1,6 +1,5 @@
 from pydantic import BaseModel
-from datetime import datetime
-from typing import NewType, Optional
+from typing import NewType
 
 
 ID = NewType("id", int)
@@ -9,7 +8,6 @@ ID = NewType("id", int)
 class Task(BaseModel):
 	summary: str
 	priority: int
-	# due_data: Optional[datetime]
 
 
 class TaskList(BaseModel):

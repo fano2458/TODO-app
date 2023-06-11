@@ -34,3 +34,4 @@ async def delete_task(id: int):
 	id = await taskman.delete_task(id)
 	response = {id:"Task successfully deleted"}
 	return jsonable_encoder(response)
+	

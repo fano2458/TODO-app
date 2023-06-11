@@ -48,3 +48,4 @@ async def update_task(id: int, new_task: Task):
 			task["task"] = new_task.dict()
 	await data_to_json(data)
 	return id
+	
